@@ -11,12 +11,36 @@
   <body>
     <main>
       <img src="logo.png" alt="DFINITY logo" />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting"></section>
+      <style>
+        .count-container{
+          width: 75%;
+          margin: auto;
+        }
+        .show{
+          height: 50px;
+          background: #ddd;
+          border: 1px solid #ccc;
+        }
+        .action{
+            font-size: 20px;
+            line-height: 1.5;
+            padding: 5px 10px;
+            border: 1px solid  lightblue;
+            cursor: pointer;
+        }
+      </style>
+      <div class="count-container">
+        <h3>第三课作业</h3>
+        <div class="show">
+          count: <span id="countShow" style="color:red;"></span>
+        </div>
+        <div style="margin-top:10px;">
+          <input type="number" name="inputCount"> 
+          <span class="action" id="set">设置count</span>
+          <span class="action" id="increment">count +1</span>
+        </div>
+      </div>
+      
     </main>
   </body>
 </html>
